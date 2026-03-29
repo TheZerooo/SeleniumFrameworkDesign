@@ -1,0 +1,10 @@
+AbstractComponent\AbstractComponents.class
+PageObjectModel\CheckoutPage.class
+PageObjectModel\ProductCatalog.class
+PageObjectModel\Registration.class
+rahulshettyacademy\App.class
+PageObjectModel\ConfirmPage.class
+PageObjectModel\CartPage.class
+PageObjectModel\OrderPage.class
+extentReport\resources\ExtentReporterNG.class
+PageObjectModel\LandingPage.class
