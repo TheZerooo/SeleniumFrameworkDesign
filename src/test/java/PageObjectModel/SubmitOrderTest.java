@@ -25,6 +25,8 @@ public class SubmitOrderTest extends BaseTest {
 	
 	
 	public int i=1;
+	
+	//(dataProvider="getData", groups= {"Purchase"})
 
 	@Test(dataProvider="getData", groups= {"Purchase"})
  public void submitOrder(String email,String password ,String productName) throws IOException, InterruptedException{

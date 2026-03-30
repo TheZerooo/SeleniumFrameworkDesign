@@ -17,9 +17,9 @@ public class ErrorValidationsTest extends BaseTest {
 	public void submitOrder() throws IOException, InterruptedException {
 		
 //		 System.out.println("yes i check incorrect login1");
-		landingPage.LoginApplication("Rahuli@gmail.com","Rahul@1234");
+		landingPage.LoginApplication("Rahulii@gmail.com","Rahul@12340");
 //		 System.out.println("yes i check incorrect login2");
-		 Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
 //		 System.out.println("yes i check incorrect login3");
 		
 	}

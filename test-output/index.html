@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Admin\eclipse-workspace\SeleniumFrameworkDesign\testng.xml</span>
+                    <span>C:\Users\Admin\eclipse-workspace\SeleniumFrameworkDesign\Purchase.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,24 +103,15 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="PageObjectModel.ErrorValidationsTest" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="PageObjectModel.SubOrderJson" class="method navigator-link" hash-for-method="submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})">submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="PageObjectModel.SubOrderJson" class="method navigator-link" hash-for-method="submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})">submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="PageObjectModel.ErrorValidationsTest" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,23 +126,24 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">PageObjectModel.ErrorValidationsTest</span>
+              <span class="class-name">PageObjectModel.SubOrderJson</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
+                  <a name="submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})">
+                  </a> <!-- submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}) -->
                   <span class="method-name">submitOrder</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.96)
+                  <span class="parameters">({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (846, 606)
+  (Session info: MicrosoftEdge=146.0.3856.84)
 Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [330091de0273450bf549788646b8c7dd, findElement {using=id, value=userEmail}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.96, fedcm:accounts: true, goog:processID: 3352, ms:edgeOptions: {debuggerAddress: localhost:55738}, msedge: {msedgedriverVersion: 143.0.3650.96 (d55fe85d0141..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55738/devtoo..., se:cdpVersion: 143.0.3650.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 330091de0273450bf549788646b8c7dd
+Command: [ab6094e4a79bc0c2106e54a425fa1f92, clickElement {id=f.259D71DAAEB12A1BCF3C733396BE3425.d.C08B99613EEF4642D01C22B519792488.e.64}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 2728, ms:edgeOptions: {debuggerAddress: localhost:53966}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: MicrosoftEdge on windows (ab6094e4a79bc0c2106e54a425fa1f92)] -&gt; css selector: .mb-3]] -&gt; css selector: .btn.w-10.rounded]
+Session ID: ab6094e4a79bc0c2106e54a425fa1f92
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -159,99 +151,74 @@ Session ID: 330091de0273450bf549788646b8c7dd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at PageObjectModel.LandingPage.LoginApplication(LandingPage.java:41)
-	at PageObjectModel.ErrorValidationsTest.submitOrder(ErrorValidationsTest.java:20)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at PageObjectModel.ProductCatalog.addProductToCart(ProductCatalog.java:47)
+	at PageObjectModel.SubOrderJson.submitOrder(SubOrderJson.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})">
+                  </a> <!-- submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (846, 606)
+  (Session info: MicrosoftEdge=146.0.3856.84)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b2a82d01840e93fe8a8f61cbebb246f7, clickElement {id=f.817924E3271EE8DFB0E0997C2DCCCBE9.d.1024C9158FED4CF6797A41B3A4DE7A7B.e.64}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 16204, ms:edgeOptions: {debuggerAddress: localhost:50407}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50407/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: MicrosoftEdge on windows (b2a82d01840e93fe8a8f61cbebb246f7)] -&gt; css selector: .mb-3]] -&gt; css selector: .btn.w-10.rounded]
+Session ID: b2a82d01840e93fe8a8f61cbebb246f7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at PageObjectModel.ProductCatalog.addProductToCart(ProductCatalog.java:47)
+	at PageObjectModel.SubOrderJson.submitOrder(SubOrderJson.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">PageObjectModel.ErrorValidationsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
-                  <span class="method-name">submitOrder</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.96)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [438b347e15a9ec5e26dc7540f2ce2d18, findElement {using=id, value=userEmail}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.96, fedcm:accounts: true, goog:processID: 30144, ms:edgeOptions: {debuggerAddress: localhost:55042}, msedge: {msedgedriverVersion: 143.0.3650.96 (d55fe85d0141..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55042/devtoo..., se:cdpVersion: 143.0.3650.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 438b347e15a9ec5e26dc7540f2ce2d18
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at PageObjectModel.LandingPage.LoginApplication(LandingPage.java:41)
-	at PageObjectModel.ErrorValidationsTest.submitOrder(ErrorValidationsTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\eclipse-workspace\SeleniumFrameworkDesign\testng.xml</span>
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\SeleniumFrameworkDesign\Purchase.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
-      &lt;include name=&quot;ErrorHandeling&quot;/&gt;
+      &lt;include name=&quot;Purchase&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
   &lt;groups&gt;
     &lt;run&gt;
-      &lt;include name=&quot;ErrorHandeling&quot;/&gt;
+      &lt;include name=&quot;Purchase&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Submit Order Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Submit Order Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;PageObjectModel.SubmitOrderTest&quot;/&gt;
+      &lt;class name=&quot;PageObjectModel.SubOrderJson&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Submit Order Test --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Erro Validation Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Erro Validation Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;PageObjectModel.ErrorValidationsTest&quot;/&gt;
     &lt;/classes&gt;
@@ -281,7 +248,7 @@ Session ID: 438b347e15a9ec5e26dc7540f2ce2d18
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">ErrorHandeling</span>
+              <span class="test-group-name">Purchase</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">submitOrder</span>
@@ -307,17 +274,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
-data.setCell(0, 2, 'PageObjectModel.ErrorValidationsTest')
-data.setCell(0, 3, 30);
+data.setCell(0, 2, 'PageObjectModel.SubOrderJson')
+data.setCell(0, 3, 1847);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrder')
-data.setCell(1, 2, 'PageObjectModel.ErrorValidationsTest')
-data.setCell(1, 3, 12);
+data.setCell(1, 2, 'PageObjectModel.SubOrderJson')
+data.setCell(1, 3, 1801);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -336,18 +303,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">PageObjectModel.SubmitOrderTest</span>
+              <span class="ignored-class-name">PageObjectModel.ErrorValidationsTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">OrderHistory</span>
-                <br/>
                 <span class="ignored-method-name">submitOrder</span>
+                <br/>
+                <span class="ignored-method-name">ProductErrorValidation</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">PageObjectModel.ErrorValidationsTest</span>
+              <span class="ignored-class-name">PageObjectModel.SubOrderJson</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">ProductErrorValidation</span>
+                <span class="ignored-method-name">OrderHistory</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -359,36 +326,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">PageObjectModel.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">PageObjectModel.SubOrderJson</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">submitOrder</span>
-                <span class="method-start">17282 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</span>
+                <span class="method-start">3181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17326 ms</span>
+                <span class="method-start">4997 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">17441 ms</span>
+                <span class="method-start">5088 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">submitOrder</span>
-                <span class="method-start">24720 ms</span>
+                <span class="method-name">submitOrder({password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com})</span>
+                <span class="method-start">8324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24737 ms</span>
+                <span class="method-start">10184 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

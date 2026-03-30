@@ -1,0 +1,26 @@
+-> PageFactory.initElements() is a method provided by Selenium that initializes the WebElements in a 
+                             Page Object class.
+							 
+-> WebElement initialization: In the Page Object model, you define the WebElement fields 
+    (like buttons, input fields, links) using locators (like @FindBy annotations) in your class.
+    However, these WebElement fields need to be initialized with actual elements from the web page. 
+          That's what initElements() does.							
+		  
+-> **tho isko likne ka main purpose h ki ( PageFactory.initElements(driver, this) ) mera code write
+       up kaam ho jaye. Pehle hum :->
+	 //  WebElement userEmail =driver.findElement(By.id("userEmail"))esa kr k likhte the 
+	   but by writing this ab humko ye likhne ki need nahi h
+    // @FindBy(id="userEmail")	   WebElement userEmail
+      dekha code kitna kaam ho gaya h
+
+	
+-> Without PageFactory.initElements(), Selenium won't know how to interact with the elements because
+                    they won't be initialized properly 
+	
+-> What does PageFactory.initElements() do?
+   PageFactory.initElements(driver, this) is typically used when you are using annotations
+   like @FindBy for your locators instead of By locators. The initElements() method initializes 
+   the elements by matching the annotations and binding them to the actual elements on the web page.					
+		  
+		  
+-> *** Iss mai 		  
