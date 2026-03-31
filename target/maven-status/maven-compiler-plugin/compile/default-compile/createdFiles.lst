@@ -1,4 +1,5 @@
 AbstractComponent\AbstractComponents.class
+PageObjectModel\RegistrationPage.class
 PageObjectModel\CheckoutPage.class
 PageObjectModel\ProductCatalog.class
 PageObjectModel\Registration.class
