@@ -4,6 +4,7 @@ import java.util.List;
 import AbstractComponent.AbstractComponents;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,11 +45,28 @@ public class ProductCatalog extends AbstractComponents{
 	
 	public  void addProductToCart(String productName)throws InterruptedException {
 		WebElement prod=getProductbyName(productName);
-		prod.findElement(addToCart).click();
+		WebElement button = prod.findElement(addToCart);
+
+		// Wait for spinner to disappear before clicking
+		waitForElementToDisappear(spinner);
+
+		// Scroll element into view
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", button);
+		Thread.sleep(1000);
+		//wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))))
+
+		// Wait for element to be clickable
+		waitForElementToBeClickable(button);
+
+		// Use JavaScript click as fallback
+		try {
+			button.click();
+		} catch (Exception e) {
+			((JavascriptExecutor)driver).executeScript("arguments[0].click();", button);
+		}
 		waitForElementToAppear(toastMessage);
 		waitForElementToDisappear(spinner);
-		//wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))))
-		
+
 	}
 
 }

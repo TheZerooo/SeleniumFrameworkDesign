@@ -9,56 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Submit Order Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">10,623</td><td>Purchase</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Erro Validation Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>Purchase</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">10,623</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Submit Order Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">100,285</td><td>Purchase</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Erro Validation Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td>Purchase</td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">100,286</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">PageObjectModel.SubOrderJson</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1774913229395</td><td rowspan="2">1801</td></tr><tr class="failedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submit Order Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">PageObjectModel.SubOrderJson</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1774944060466</td><td rowspan="2">47439</td></tr><tr class="passedeven"><td><a href="#m1">submitOrder</a></td></tr></tbody>
 <tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Submit Order Test</h2><h3 id="m0">PageObjectModel.SubOrderJson#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (846, 606)
-  (Session info: MicrosoftEdge=146.0.3856.84)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ab6094e4a79bc0c2106e54a425fa1f92, clickElement {id=f.259D71DAAEB12A1BCF3C733396BE3425.d.C08B99613EEF4642D01C22B519792488.e.64}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 2728, ms:edgeOptions: {debuggerAddress: localhost:53966}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[EdgeDriver: MicrosoftEdge on windows (ab6094e4a79bc0c2106e54a425fa1f92)] -&gt; css selector: .mb-3]] -&gt; css selector: .btn.w-10.rounded]
-Session ID: ab6094e4a79bc0c2106e54a425fa1f92
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at PageObjectModel.ProductCatalog.addProductToCart(ProductCatalog.java:47)
-	at PageObjectModel.SubOrderJson.submitOrder(SubOrderJson.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">PageObjectModel.SubOrderJson#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (846, 606)
-  (Session info: MicrosoftEdge=146.0.3856.84)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [b2a82d01840e93fe8a8f61cbebb246f7, clickElement {id=f.817924E3271EE8DFB0E0997C2DCCCBE9.d.1024C9158FED4CF6797A41B3A4DE7A7B.e.64}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.84, fedcm:accounts: true, goog:processID: 16204, ms:edgeOptions: {debuggerAddress: localhost:50407}, msedge: {msedgedriverVersion: 146.0.3856.84 (fe100ed2d0fb..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50407/devtoo..., se:cdpVersion: 146.0.3856.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[EdgeDriver: MicrosoftEdge on windows (b2a82d01840e93fe8a8f61cbebb246f7)] -&gt; css selector: .mb-3]] -&gt; css selector: .btn.w-10.rounded]
-Session ID: b2a82d01840e93fe8a8f61cbebb246f7
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at PageObjectModel.ProductCatalog.addProductToCart(ProductCatalog.java:47)
-	at PageObjectModel.SubOrderJson.submitOrder(SubOrderJson.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Submit Order Test</h2><h3 id="m0">PageObjectModel.SubOrderJson#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">PageObjectModel.SubOrderJson#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Rahul@1234, product=ZARA COAT 3, email=Rahuli@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>Erro Validation Test</h2></body>
 </html>
